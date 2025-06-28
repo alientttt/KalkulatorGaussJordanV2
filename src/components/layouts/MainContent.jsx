@@ -211,10 +211,10 @@ const MainContent = ({ activeMethod, result, setResult }) => {
         <button
           onClick={calculate}
           disabled={isAnimating}
-          className={`w-full py-3 px-6 rounded-xl font-semibold text-white transition-all duration-300 transform ${
+          className={`w-full py-3 px-6 rounded-xl font-semibold text-black transition-all duration-300 transform ${
             isAnimating
               ? "bg-gray-400 cursor-not-allowed"
-              : "bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 hover:scale-105 shadow-lg hover:shadow-xl"
+              : "bg-gradient-to-r from-gray-100 to-blue-300 hover:from-gray-200 hover:to-blue-200 hover:scale-105 shadow-lg hover:shadow-xl"
           }`}
         >
           {isAnimating ? (
